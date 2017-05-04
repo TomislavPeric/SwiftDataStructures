@@ -63,42 +63,42 @@
 
 /* Begin PBXFileReference section */
 		E94B3BD81EBB29D00064E55C /* libSwiftDataStructs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwiftDataStructs.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E94B3BE41EBB2A230064E55C /* SwiftDataStructs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDataStructs-Bridging-Header.h"; sourceTree = "<group>"; };
-		E94B3BE51EBB2A240064E55C /* AVLTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
-		E94B3BE61EBB2A240064E55C /* BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
-		E94B3BE71EBB2A240064E55C /* BinarySearchTreeTraversals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTreeTraversals.swift; sourceTree = "<group>"; };
-		E94B3BE81EBB2A240064E55C /* BTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTree.swift; sourceTree = "<group>"; };
-		E94B3BE91EBB2A240064E55C /* CartesianTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartesianTree.swift; sourceTree = "<group>"; };
-		E94B3BEA1EBB2A240064E55C /* Dequeue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dequeue.swift; sourceTree = "<group>"; };
-		E94B3BEB1EBB2A240064E55C /* DisjoinSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisjoinSets.swift; sourceTree = "<group>"; };
-		E94B3BEC1EBB2A240064E55C /* FenwickTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FenwickTree.swift; sourceTree = "<group>"; };
-		E94B3BED1EBB2A240064E55C /* FibonacciHeap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciHeap.swift; sourceTree = "<group>"; };
-		E94B3BEE1EBB2A240064E55C /* FibonacciPriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciPriorityQueue.swift; sourceTree = "<group>"; };
-		E94B3BEF1EBB2A240064E55C /* GeneralizedSuffixTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralizedSuffixTree.swift; sourceTree = "<group>"; };
-		E94B3BF01EBB2A240064E55C /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
-		E94B3BF11EBB2A240064E55C /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
-		E94B3BF21EBB2A240064E55C /* HeapWithChangableElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeapWithChangableElements.swift; sourceTree = "<group>"; };
-		E94B3BF31EBB2A240064E55C /* LazySegmentTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazySegmentTree.swift; sourceTree = "<group>"; };
-		E94B3BF41EBB2A240064E55C /* LFUCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFUCache.swift; sourceTree = "<group>"; };
-		E94B3BF51EBB2A240064E55C /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
-		E94B3BF61EBB2A240064E55C /* LRUCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
-		E94B3BF71EBB2A240064E55C /* PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
-		E94B3BF81EBB2A240064E55C /* PRQuadTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRQuadTree.swift; sourceTree = "<group>"; };
-		E94B3BF91EBB2A240064E55C /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
-		E94B3BFA1EBB2A240064E55C /* QueueWithMax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueWithMax.swift; sourceTree = "<group>"; };
-		E94B3BFB1EBB2A240064E55C /* RadixTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadixTree.swift; sourceTree = "<group>"; };
-		E94B3BFC1EBB2A240064E55C /* RedBlackTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedBlackTree.swift; sourceTree = "<group>"; };
-		E94B3BFD1EBB2A240064E55C /* SegmentTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentTree.swift; sourceTree = "<group>"; };
-		E94B3BFE1EBB2A240064E55C /* SkipList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkipList.swift; sourceTree = "<group>"; };
-		E94B3BFF1EBB2A240064E55C /* SortedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortedArray.swift; sourceTree = "<group>"; };
-		E94B3C001EBB2A240064E55C /* SplayCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplayCache.swift; sourceTree = "<group>"; };
-		E94B3C011EBB2A240064E55C /* SplayTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplayTree.swift; sourceTree = "<group>"; };
-		E94B3C021EBB2A240064E55C /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
-		E94B3C031EBB2A240064E55C /* SuffixArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuffixArray.swift; sourceTree = "<group>"; };
-		E94B3C041EBB2A240064E55C /* SuffixTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuffixTree.swift; sourceTree = "<group>"; };
-		E94B3C051EBB2A240064E55C /* TernaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TernaryTree.swift; sourceTree = "<group>"; };
-		E94B3C061EBB2A240064E55C /* Treap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Treap.swift; sourceTree = "<group>"; };
-		E94B3C071EBB2A240064E55C /* Trie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		E94B3BE41EBB2A230064E55C /* SwiftDataStructs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SwiftDataStructs-Bridging-Header.h"; path = "SwiftDataStructs/SwiftDataStructs-Bridging-Header.h"; sourceTree = "<group>"; };
+		E94B3BE51EBB2A240064E55C /* AVLTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AVLTree.swift; path = SwiftDataStructs/AVLTree.swift; sourceTree = "<group>"; };
+		E94B3BE61EBB2A240064E55C /* BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BinarySearchTree.swift; path = SwiftDataStructs/BinarySearchTree.swift; sourceTree = "<group>"; };
+		E94B3BE71EBB2A240064E55C /* BinarySearchTreeTraversals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BinarySearchTreeTraversals.swift; path = SwiftDataStructs/BinarySearchTreeTraversals.swift; sourceTree = "<group>"; };
+		E94B3BE81EBB2A240064E55C /* BTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BTree.swift; path = SwiftDataStructs/BTree.swift; sourceTree = "<group>"; };
+		E94B3BE91EBB2A240064E55C /* CartesianTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartesianTree.swift; path = SwiftDataStructs/CartesianTree.swift; sourceTree = "<group>"; };
+		E94B3BEA1EBB2A240064E55C /* Dequeue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dequeue.swift; path = SwiftDataStructs/Dequeue.swift; sourceTree = "<group>"; };
+		E94B3BEB1EBB2A240064E55C /* DisjoinSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisjoinSets.swift; path = SwiftDataStructs/DisjoinSets.swift; sourceTree = "<group>"; };
+		E94B3BEC1EBB2A240064E55C /* FenwickTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FenwickTree.swift; path = SwiftDataStructs/FenwickTree.swift; sourceTree = "<group>"; };
+		E94B3BED1EBB2A240064E55C /* FibonacciHeap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibonacciHeap.swift; path = SwiftDataStructs/FibonacciHeap.swift; sourceTree = "<group>"; };
+		E94B3BEE1EBB2A240064E55C /* FibonacciPriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibonacciPriorityQueue.swift; path = SwiftDataStructs/FibonacciPriorityQueue.swift; sourceTree = "<group>"; };
+		E94B3BEF1EBB2A240064E55C /* GeneralizedSuffixTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralizedSuffixTree.swift; path = SwiftDataStructs/GeneralizedSuffixTree.swift; sourceTree = "<group>"; };
+		E94B3BF01EBB2A240064E55C /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Graph.swift; path = SwiftDataStructs/Graph.swift; sourceTree = "<group>"; };
+		E94B3BF11EBB2A240064E55C /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Heap.swift; path = SwiftDataStructs/Heap.swift; sourceTree = "<group>"; };
+		E94B3BF21EBB2A240064E55C /* HeapWithChangableElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeapWithChangableElements.swift; path = SwiftDataStructs/HeapWithChangableElements.swift; sourceTree = "<group>"; };
+		E94B3BF31EBB2A240064E55C /* LazySegmentTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LazySegmentTree.swift; path = SwiftDataStructs/LazySegmentTree.swift; sourceTree = "<group>"; };
+		E94B3BF41EBB2A240064E55C /* LFUCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LFUCache.swift; path = SwiftDataStructs/LFUCache.swift; sourceTree = "<group>"; };
+		E94B3BF51EBB2A240064E55C /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkedList.swift; path = SwiftDataStructs/LinkedList.swift; sourceTree = "<group>"; };
+		E94B3BF61EBB2A240064E55C /* LRUCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LRUCache.swift; path = SwiftDataStructs/LRUCache.swift; sourceTree = "<group>"; };
+		E94B3BF71EBB2A240064E55C /* PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PriorityQueue.swift; path = SwiftDataStructs/PriorityQueue.swift; sourceTree = "<group>"; };
+		E94B3BF81EBB2A240064E55C /* PRQuadTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRQuadTree.swift; path = SwiftDataStructs/PRQuadTree.swift; sourceTree = "<group>"; };
+		E94B3BF91EBB2A240064E55C /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = SwiftDataStructs/Queue.swift; sourceTree = "<group>"; };
+		E94B3BFA1EBB2A240064E55C /* QueueWithMax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueueWithMax.swift; path = SwiftDataStructs/QueueWithMax.swift; sourceTree = "<group>"; };
+		E94B3BFB1EBB2A240064E55C /* RadixTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RadixTree.swift; path = SwiftDataStructs/RadixTree.swift; sourceTree = "<group>"; };
+		E94B3BFC1EBB2A240064E55C /* RedBlackTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RedBlackTree.swift; path = SwiftDataStructs/RedBlackTree.swift; sourceTree = "<group>"; };
+		E94B3BFD1EBB2A240064E55C /* SegmentTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegmentTree.swift; path = SwiftDataStructs/SegmentTree.swift; sourceTree = "<group>"; };
+		E94B3BFE1EBB2A240064E55C /* SkipList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkipList.swift; path = SwiftDataStructs/SkipList.swift; sourceTree = "<group>"; };
+		E94B3BFF1EBB2A240064E55C /* SortedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortedArray.swift; path = SwiftDataStructs/SortedArray.swift; sourceTree = "<group>"; };
+		E94B3C001EBB2A240064E55C /* SplayCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplayCache.swift; path = SwiftDataStructs/SplayCache.swift; sourceTree = "<group>"; };
+		E94B3C011EBB2A240064E55C /* SplayTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplayTree.swift; path = SwiftDataStructs/SplayTree.swift; sourceTree = "<group>"; };
+		E94B3C021EBB2A240064E55C /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = SwiftDataStructs/Stack.swift; sourceTree = "<group>"; };
+		E94B3C031EBB2A240064E55C /* SuffixArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuffixArray.swift; path = SwiftDataStructs/SuffixArray.swift; sourceTree = "<group>"; };
+		E94B3C041EBB2A240064E55C /* SuffixTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuffixTree.swift; path = SwiftDataStructs/SuffixTree.swift; sourceTree = "<group>"; };
+		E94B3C051EBB2A240064E55C /* TernaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TernaryTree.swift; path = SwiftDataStructs/TernaryTree.swift; sourceTree = "<group>"; };
+		E94B3C061EBB2A240064E55C /* Treap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Treap.swift; path = SwiftDataStructs/Treap.swift; sourceTree = "<group>"; };
+		E94B3C071EBB2A240064E55C /* Trie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trie.swift; path = SwiftDataStructs/Trie.swift; sourceTree = "<group>"; };
 		E94B3C2C1EBB2EED0064E55C /* Iterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
 		E94B3C2D1EBB2EED0064E55C /* Visitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
 		E94B3C311EBB2F290064E55C /* BinarySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
@@ -120,9 +120,9 @@
 		E94B3BCF1EBB29D00064E55C = {
 			isa = PBXGroup;
 			children = (
+				E94B3C371EBB378D0064E55C /* Structures */,
 				E94B3C301EBB2F170064E55C /* Alghoritams */,
 				E94B3C2B1EBB2EE20064E55C /* Patterns */,
-				E94B3BDA1EBB29D00064E55C /* SwiftDataStructs */,
 				E94B3BD91EBB29D00064E55C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,7 +135,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E94B3BDA1EBB29D00064E55C /* SwiftDataStructs */ = {
+		E94B3C2B1EBB2EE20064E55C /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				E94B3C2C1EBB2EED0064E55C /* Iterator.swift */,
+				E94B3C2D1EBB2EED0064E55C /* Visitor.swift */,
+			);
+			name = Patterns;
+			sourceTree = "<group>";
+		};
+		E94B3C301EBB2F170064E55C /* Alghoritams */ = {
+			isa = PBXGroup;
+			children = (
+				E94B3C311EBB2F290064E55C /* BinarySearch.swift */,
+				E94B3C321EBB2F290064E55C /* MedianHeap.swift */,
+				E94B3C331EBB2F290064E55C /* RadixSort.swift */,
+			);
+			name = Alghoritams;
+			sourceTree = "<group>";
+		};
+		E94B3C371EBB378D0064E55C /* Structures */ = {
 			isa = PBXGroup;
 			children = (
 				E94B3BE51EBB2A240064E55C /* AVLTree.swift */,
@@ -175,26 +194,7 @@
 				E94B3C071EBB2A240064E55C /* Trie.swift */,
 				E94B3BE41EBB2A230064E55C /* SwiftDataStructs-Bridging-Header.h */,
 			);
-			path = SwiftDataStructs;
-			sourceTree = "<group>";
-		};
-		E94B3C2B1EBB2EE20064E55C /* Patterns */ = {
-			isa = PBXGroup;
-			children = (
-				E94B3C2C1EBB2EED0064E55C /* Iterator.swift */,
-				E94B3C2D1EBB2EED0064E55C /* Visitor.swift */,
-			);
-			name = Patterns;
-			sourceTree = "<group>";
-		};
-		E94B3C301EBB2F170064E55C /* Alghoritams */ = {
-			isa = PBXGroup;
-			children = (
-				E94B3C311EBB2F290064E55C /* BinarySearch.swift */,
-				E94B3C321EBB2F290064E55C /* MedianHeap.swift */,
-				E94B3C331EBB2F290064E55C /* RadixSort.swift */,
-			);
-			name = Alghoritams;
+			name = Structures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
