@@ -47,6 +47,7 @@
 		E94B3C341EBB2F290064E55C /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B3C311EBB2F290064E55C /* BinarySearch.swift */; };
 		E94B3C351EBB2F290064E55C /* MedianHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B3C321EBB2F290064E55C /* MedianHeap.swift */; };
 		E94B3C361EBB2F290064E55C /* RadixSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B3C331EBB2F290064E55C /* RadixSort.swift */; };
+		E9F8B1481EC1B7580086B14B /* NextLexicographicalPermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8B1471EC1B7580086B14B /* NextLexicographicalPermutation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -104,6 +105,7 @@
 		E94B3C311EBB2F290064E55C /* BinarySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		E94B3C321EBB2F290064E55C /* MedianHeap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedianHeap.swift; sourceTree = "<group>"; };
 		E94B3C331EBB2F290064E55C /* RadixSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadixSort.swift; sourceTree = "<group>"; };
+		E9F8B1471EC1B7580086B14B /* NextLexicographicalPermutation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLexicographicalPermutation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		E94B3C301EBB2F170064E55C /* Alghoritams */ = {
 			isa = PBXGroup;
 			children = (
+				E9F8B1471EC1B7580086B14B /* NextLexicographicalPermutation.swift */,
 				E94B3C311EBB2F290064E55C /* BinarySearch.swift */,
 				E94B3C321EBB2F290064E55C /* MedianHeap.swift */,
 				E94B3C331EBB2F290064E55C /* RadixSort.swift */,
@@ -273,6 +276,7 @@
 				E94B3C0E1EBB2A240064E55C /* DisjoinSets.swift in Sources */,
 				E94B3C231EBB2A240064E55C /* SplayCache.swift in Sources */,
 				E94B3C2E1EBB2EED0064E55C /* Iterator.swift in Sources */,
+				E9F8B1481EC1B7580086B14B /* NextLexicographicalPermutation.swift in Sources */,
 				E94B3C0D1EBB2A240064E55C /* Dequeue.swift in Sources */,
 				E94B3C211EBB2A240064E55C /* SkipList.swift in Sources */,
 				E94B3C281EBB2A240064E55C /* TernaryTree.swift in Sources */,
@@ -435,6 +439,7 @@
 				E94B3BE31EBB29D00064E55C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
