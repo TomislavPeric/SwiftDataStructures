@@ -516,8 +516,11 @@ class PRQuadTree<X : Comparable & Addable, V> {
         var minSquer : X?
         var minNode : QuadNode<X,V>?
         for currentNode in posibilities!{
+            
+            let dX = currentNode.x! - x
+            let dY = currentNode.y! - y
         
-            let dSquer = (currentNode.x! - x) * (currentNode.x! - x) + (currentNode.y! - y) * (currentNode.y! - y)
+            let dSquer = dX * dX + dY * dY
             
             if minSquer == nil || minSquer! > dSquer{
                 minSquer = dSquer

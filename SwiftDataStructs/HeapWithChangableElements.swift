@@ -32,7 +32,7 @@ class HeapWithChangableElements<T :Hashable>: Heap<T> {
         if map[key]!.count == 1{
             map[key] = nil
         }else{
-            map[key]!.remove(at: map[key]!.index(of: value)!)
+            map[key]!.remove(at: map[key]!.firstIndex(of: value)!)
         }
     }
 

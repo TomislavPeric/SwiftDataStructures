@@ -82,7 +82,7 @@ class RadixTree {
     /// - parameter node: current node
     fileprivate func insertHelper(word:String,node:TrieNode<String>){
     
-        let firstCharachter = word.characters.first!
+        let firstCharachter = word.first!
         if let edge = node.edges?[firstCharachter]{
             let compareResults = compareTwoStrings(stringToAdd: word, stringAtNode: edge.endNode.value!)
             if compareResults.lastFromNewNode.isEmpty == true && compareResults.lastFromOldNode.isEmpty == true{
@@ -138,7 +138,7 @@ class RadixTree {
         nodeToAdd.addChildren(c: suffix, node: beforeNode)
         beforeNode.value = suffix
         if parent != nil {_ = RadixEdge.init(value: firstCharachter, startNode: parent!, endNode: nodeToAdd)}
-        _ = RadixEdge.init(value: suffix.characters.first!, startNode: nodeToAdd, endNode: beforeNode)
+        _ = RadixEdge.init(value: suffix.first!, startNode: nodeToAdd, endNode: beforeNode)
         return nodeToAdd
     }
     
@@ -150,21 +150,21 @@ class RadixTree {
     /// - return: with informtion about commonPrefix and both string suffix
     fileprivate func compareTwoStrings(stringToAdd:String,stringAtNode:String)->(commonPrefix: String, lastFromOldNode: String,lastFromNewNode: String, isInsertedBefore:Bool){
         
-        let isNodeStringLarger = stringAtNode.characters.count > stringToAdd.characters.count
+        let isNodeStringLarger = stringAtNode.count > stringToAdd.count
         
         let commonPrefix = stringAtNode.commonPrefix(with: stringToAdd)
         
-        let maxi = max(stringAtNode.characters.count, stringToAdd.characters.count)
-        let diff = max(maxi - commonPrefix.characters.count,0)
+        let maxi = max(stringAtNode.count, stringToAdd.count)
+        let diff = max(maxi - commonPrefix.count,0)
         
-        let mini = min(stringAtNode.characters.count, stringToAdd.characters.count)
-        let miniDiff = max(mini - commonPrefix.characters.count,0)
+        let mini = min(stringAtNode.count, stringToAdd.count)
+        let miniDiff = max(mini - commonPrefix.count,0)
         
         let a = isNodeStringLarger ? stringAtNode : stringToAdd
         let b = isNodeStringLarger ? stringToAdd : stringAtNode
         
-        let lastFromOldNode = isNodeStringLarger ? a.substring(from:a.index(a.endIndex, offsetBy: -diff)) : b.substring(from:b.index(b.endIndex, offsetBy: -miniDiff))
-        let lastFromNewNode = isNodeStringLarger ? b.substring(from:b.index(b.endIndex, offsetBy: -miniDiff)) : a.substring(from:a.index(a.endIndex, offsetBy: -diff))
+        let lastFromOldNode = isNodeStringLarger ? String(a[a.index(a.endIndex, offsetBy: -diff)...]) : String(b[b.index(b.endIndex, offsetBy: -miniDiff)...])
+        let lastFromNewNode = isNodeStringLarger ? String(b[b.index(b.endIndex, offsetBy: -miniDiff)...]) : String(a[a.index(a.endIndex, offsetBy: -diff)...])
         return (commonPrefix,lastFromOldNode,lastFromNewNode,isNodeStringLarger)
         
     }
@@ -281,7 +281,7 @@ class RadixTree {
     fileprivate func nodeOfSearchString(string:String, searchingForPrefix:Bool,node:TrieNode<String>)->TrieNode<String>?{
         
         var currentNode = node
-        let charachter = string.characters.first!
+        let charachter = string.first!
         let edge = currentNode.edges?[charachter]
         
         if edge == nil{
@@ -292,7 +292,7 @@ class RadixTree {
                 return currentNode
             }else if currentNode.value == string && !currentNode.isEnded && !searchingForPrefix{
                 return nil
-            }else if currentNode.value!.characters.count > string.characters.count{
+            }else if currentNode.value!.count > string.count{
                 if (!searchingForPrefix){
                     return nil
                 }
@@ -300,7 +300,7 @@ class RadixTree {
             }else{
                 let commonPrefix = currentNode.value!.commonPrefix(with: string)
                 let index = commonPrefix.index(commonPrefix.endIndex, offsetBy: 0)
-                let newSearchedString = string.substring(from: index)
+                let newSearchedString = String(string[index...])
                 return nodeOfSearchString(string: newSearchedString, searchingForPrefix: searchingForPrefix,node:edge!.endNode)
             }
         }

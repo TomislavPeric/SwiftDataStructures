@@ -53,10 +53,10 @@ class SuffixArray {
         suffixes = []
         orderedData = []
     
-        for i in 0..<string.characters.count{
+        for i in 0..<string.count{
         
             let range = string.index(string.startIndex, offsetBy: i)..<string.index(string.endIndex, offsetBy: 0)
-            let suffix =  string.substring(with: range)
+            let suffix = String(string[range])
             suffixes!.append(suffix)
             orderedData!.append(SuffixArrayNode.init(suffix: suffix, index: i))
         }
@@ -155,7 +155,7 @@ class SuffixArray {
         for i in 0..<orderedData!.count - 1{
     
             let pref = orderedData![i].suffix.commonPrefix(with: orderedData![i + 1].suffix)
-            if pref.characters.count > currentRes.characters.count{
+            if pref.count > currentRes.count{
                 currentRes = pref
             }
         }

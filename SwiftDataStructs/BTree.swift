@@ -444,10 +444,10 @@ class BTree<K : Comparable, V> {
                 if node.parent! === root{
                     root = sibling
                 }else{
-                    _ = node.parent!.removeChildAtIndex(index: num!)
+                    node.parent!.removeChildAtIndex(index: num!)
                 }
             }else{
-                _ = node.parent!.removeChildAtIndex(index: num!)
+                node.parent!.removeChildAtIndex(index: num!)
             }
         }else{
             let sibling = node.parent!.childrens![num! + 1]!
@@ -458,10 +458,10 @@ class BTree<K : Comparable, V> {
                 if node.parent! === root{
                     root = node
                 }else{
-                    _ = node.parent!.removeChildAtIndex(index: num! + 1)
+                    node.parent!.removeChildAtIndex(index: num! + 1)
                 }
             }else{
-                _ = node.parent!.removeChildAtIndex(index: num! + 1)
+                node.parent!.removeChildAtIndex(index: num! + 1)
             }
         }
         if node !== root{
@@ -494,7 +494,7 @@ class BTree<K : Comparable, V> {
             
             if node.childrens != nil{
                 let child = sibling.childrens![0]!
-                _ = sibling.removeChildAtIndex(index: 0)
+                sibling.removeChildAtIndex(index: 0)
                 node.appendChild(child: child)
             }
         

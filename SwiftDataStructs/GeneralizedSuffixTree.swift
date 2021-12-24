@@ -22,19 +22,19 @@ class GeneralizedSuffixTree: SuffixTree {
         var i = 0
         var last$Position = 0
         for chars in strings{
-            last$Position += chars.characters.count
+            last$Position += chars.count
             string.append(chars)
             string.append("$")
             placeOf$.append(last$Position)
             string.append(String(i))
             string.append("#")
             last$Position += 2
-            last$Position += String(i).characters.count
+            last$Position += String(i).count
             map[i] = chars
             i += 1
         }
         
-        super.init(chars: Array(string.characters))
+        super.init(chars: Array(string))
     }
     
     // MARK:
@@ -82,7 +82,7 @@ class GeneralizedSuffixTree: SuffixTree {
         
         let pat = "\\d+#"
         let regex = try! NSRegularExpression(pattern: pat, options: [])
-        let matches = regex.matches(in: string, options: [], range: NSRange(location: 0, length: string.characters.count))
+        let matches = regex.matches(in: string, options: [], range: NSRange(location: 0, length: string.count))
         
         if matches.count > 0{
         
@@ -92,7 +92,7 @@ class GeneralizedSuffixTree: SuffixTree {
         
         let pat2 = "\\w+"
         let regex2 = try! NSRegularExpression(pattern: pat2, options: [])
-        let matches2 = regex2.matches(in: string, options: [], range: NSRange(location: 0, length: string.characters.count))
+        let matches2 = regex2.matches(in: string, options: [], range: NSRange(location: 0, length: string.count))
         
         if matches2.count == 0{
             
@@ -158,7 +158,7 @@ class GeneralizedSuffixTree: SuffixTree {
             let string = node.toString(data: data)
             let pat = "^\\d+#"
             let regex = try! NSRegularExpression(pattern: pat, options: [])
-            let matches = regex.matches(in:string , options: [], range: NSRange(location: 0, length: string.characters.count))
+            let matches = regex.matches(in:string , options: [], range: NSRange(location: 0, length: string.count))
             
             if matches.count > 0{
                 
@@ -304,8 +304,8 @@ class GeneralizedSuffixTree: SuffixTree {
         var resultString : String?
         var currentCount = 0
         for string in data{
-            if string.characters.count > currentCount{
-                currentCount = string.characters.count
+            if string.count > currentCount{
+                currentCount = string.count
                 resultString = string
             }
         }
@@ -371,9 +371,9 @@ class GeneralizedSuffixTree: SuffixTree {
         if indexes.count == map.count && !newSuffix.isEmpty{
             data.append(newSuffix)
             
-            if palindromData != nil && newSuffix.characters.count > 1{
+            if palindromData != nil && newSuffix.count > 1{
                 for end in ends{
-                    let lenght = newSuffix.characters.count - 1
+                    let lenght = newSuffix.count - 1
                     let start = end - lenght
                     
                     if start > N!{
@@ -411,9 +411,9 @@ class GeneralizedSuffixTree: SuffixTree {
             return nil
         }
         
-        let reversed = string.characters.reversed()
+        let reversed = string.reversed()
         let tree = GeneralizedSuffixTree.init(strings: [string, String(reversed)])
-        tree.N = string.characters.count
+        tree.N = string.count
         tree.build()
         var data : [String] = []
         var palindroms : [String]? = []
@@ -422,8 +422,8 @@ class GeneralizedSuffixTree: SuffixTree {
         var resultString : String?
         var currentCount = 0
         for string in palindroms!{
-            if string.characters.count > currentCount{
-                currentCount = string.characters.count
+            if string.count > currentCount{
+                currentCount = string.count
                 resultString = string
             }
         }
@@ -455,6 +455,8 @@ class GeneralizedSuffixTree: SuffixTree {
     override func buildSuffixArray() -> SuffixArray {
         // NOT SUPPORTED FOR NOW
         assert(false)
+        return SuffixArray.init(string: "");
+        
     }
     
 }

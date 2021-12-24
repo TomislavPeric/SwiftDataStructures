@@ -77,7 +77,7 @@ class Trie {
         
         var currentNode = root
         
-        for character in string.lowercased().characters{
+        for character in string.lowercased(){
             if let val = currentNode.childrens[character] {
                 currentNode = val
             }else{
@@ -102,7 +102,7 @@ class Trie {
     
         var currentNode = root
         
-        for character in string.lowercased().characters{
+        for character in string.lowercased(){
             if let val = currentNode.childrens[character] {
                 currentNode = val
             }else{

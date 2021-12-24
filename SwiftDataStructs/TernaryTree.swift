@@ -10,7 +10,7 @@ import UIKit
 
 extension String {
     subscript (i: Int) -> Character {
-        return self[self.characters.index(self.startIndex, offsetBy: i)]
+        return self[self.index(self.startIndex, offsetBy: i)]
     }
     
 }
@@ -149,8 +149,8 @@ class TernaryTree<K> {
         assert(!key.isEmpty,"Inserted key can not be empty")
     
         if root == nil{
-            root = TernaryNode<K>.init(key: key.lowercased().characters.first!)
-            if key.characters.count == 1{
+            root = TernaryNode<K>.init(key: key.lowercased().first!)
+            if key.count == 1{
                 root?.value = value
                 return
             }else{
@@ -170,14 +170,14 @@ class TernaryTree<K> {
     /// - parameter position: posiiton of current charachter that we want check (insert if not exist in proper position)
     fileprivate func insertHelper(key:String,node:TernaryNode<K>,position:Int,value:K?){
         
-        if position >= key.characters.count{
+        if position >= key.count{
             node.parent!.value = value
             return
         }
         
         let currentCharachter = key.lowercased()[position]
         let index = key.index(key.startIndex, offsetBy: position + 1)
-        let string = key.substring(from: index)
+        let string = String(key[index...])
     
         if node.key == currentCharachter{
             if node.centerChild == nil{
@@ -218,13 +218,13 @@ class TernaryTree<K> {
             return
         }
         
-        let first = string.characters.first!
+        let first = string.first!
         let n = TernaryNode<K>.init(key: first)
         node.centerChild = n
         
-        let newString = String(string.characters.dropFirst())
+        let newString = String(string.dropFirst())
         
-        guard newString.characters.count != 0 else {
+        guard newString.count != 0 else {
             n.value = value
             return
         }
@@ -264,14 +264,14 @@ class TernaryTree<K> {
     /// - return: node with final key charachter that store key value.
     fileprivate func searchHelper(key:String,node:TernaryNode<K>,position:Int)->TernaryNode<K>?{
         
-        if position >= key.characters.count{
+        if position >= key.count{
             return nil
         }
         
         let currentCharachter = key.lowercased()[position]
         
         if currentCharachter == node.key{
-            if key.characters.count == position + 1{
+            if key.count == position + 1{
                 return node
             }else{
                 if node.centerChild == nil{

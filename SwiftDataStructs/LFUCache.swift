@@ -24,8 +24,8 @@ class LFUCacheNode<T> : Equatable, Hashable{
         return lhs.key == rhs.key
     }
     
-    var hashValue: Int {
-        return key.hash
+    func hash(into hasher: inout Hasher) {
+        return hasher.combine(key.hash)
     }
 }
 
